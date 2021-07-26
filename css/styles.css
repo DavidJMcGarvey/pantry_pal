@@ -29,7 +29,7 @@ body {
   position: absolute;
 }
 
-.quote:before {
+/* .quote:before {
   content: "“";
   top: .25em;
   left: -.5em;
@@ -40,7 +40,7 @@ body {
   bottom: -.1em;
   margin-left: .1em;
   position: absolute;
-}
+} */
 
 .source {
   font-size: 1.25rem;;
