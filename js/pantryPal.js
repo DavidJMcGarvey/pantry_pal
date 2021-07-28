@@ -1,4 +1,6 @@
 function addItem() {
-    let item = "<li>Honey</li>";
-
+    let item = "<li class=\"quote\">Honey</li>";
+    document.getElementById('inventory-list').innerHTML += item;
 }
+
+addItem();
