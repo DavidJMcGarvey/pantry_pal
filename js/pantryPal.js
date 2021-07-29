@@ -3,4 +3,5 @@ function addItem() {
     document.getElementById('inventory-list').innerHTML += item;
 }
 
-addItem();
+document.getElementById('addItemButton').addEventListener("click", addItem, false);
+
