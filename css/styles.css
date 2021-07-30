@@ -16,7 +16,7 @@ body {
 }
 
 .quote {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.1;
   position: relative;
@@ -66,6 +66,11 @@ body {
 .year:before {
   content: ", ";
   font-style: normal;
+}
+
+.mainTitle {
+  font-size: 6rem;
+  text-align: center;
 }
 
 #addItemButton {
