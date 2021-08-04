@@ -7,3 +7,16 @@ function addItem() {
 
 document.getElementById('addItemButton').addEventListener("click", addItem, false);
 
+// let item = document.querySelectorAll('.quote');
+// console.log(item);
+
+function showMeal() {
+    let items = document.querySelectorAll('.quote');
+    for (let i = 0; i < items.length; i++) {
+        if (items[i] == "Bread") {
+            console.log('Did it Dave!');
+        }
+    }
+}
+
+showMeal();
