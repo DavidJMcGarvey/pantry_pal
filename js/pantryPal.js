@@ -1,22 +1,33 @@
 const newItem = document.querySelector('.addItemInput');
-// console.log(newItem.value);
-function addItem() {
-    let item = `<li class=\"quote\">${newItem.value}</li>`;
-    document.getElementById('inventory-list').innerHTML += item;
-}
-
-document.getElementById('addItemButton').addEventListener("click", addItem, false);
-
-// let item = document.querySelectorAll('.quote');
-// console.log(item);
 
 function showMeal() {
-    let items = document.querySelectorAll('.quote');
+    let items = document.querySelectorAll('.item');
     for (let i = 0; i < items.length; i++) {
-        if (items[i] == "Bread") {
-            console.log('Did it Dave!');
+        let item = items[i].innerHTML;
+        if (item == "Bread" && "Cheese") {
+            console.log('Grilled cheese Davey boy!');
         }
     }
 }
 
-showMeal();
+function addItem() {
+    let item = `<li class=\"item\">${newItem.value}</li>`;
+    if (newItem.value !== "") {
+        document.getElementById('inventory-list').innerHTML += item;
+    }
+    showMeal();
+}
+
+document.getElementById('addItemButton').addEventListener("click", addItem, false);
+
+
+
+
+
+
+
+
+
+
+
+
