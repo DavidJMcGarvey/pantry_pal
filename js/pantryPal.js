@@ -1,3 +1,5 @@
+import { inventory } from "./inventory.js";
+console.log(inventory[2]);
 function showMeal() {
     let items = document.querySelectorAll('.item');
     for (let i = 0; i < items.length; i++) {
@@ -18,11 +20,6 @@ function addItem() {
 }
 
 document.getElementById('addItemButton').addEventListener("click", addItem, false);
-
-
-
-
-showMeal();
 
 
 

@@ -123,6 +123,7 @@ body {
   background-color: #36b55c;
   padding: 15px 0;
   transition: .5s ;
+  text-align: center;
 }
 
 .addItemInput:hover {
