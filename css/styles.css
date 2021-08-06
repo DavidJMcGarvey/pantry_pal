@@ -8,6 +8,7 @@ body {
 
 #item-box {
   position: absolute;
+  margin-top: 2em;
   top: 42%;
   left: 4%;
   right: 10%;
@@ -87,10 +88,10 @@ body {
   position: fixed;
   width: 6em;
   display: inline-block;
-  left: 50%;
-  margin-top: 10px;
+  /* left: 50%; */
+  /* margin-top: 10px;
   margin-bottom: 200px;
-  margin-left: -650px;
+  margin-left: -650px; */
   bottom: 150px;
   border-radius: 4px;
   border: 2px solid #fff;
@@ -110,11 +111,11 @@ body {
 
 .addItemInput {
   position: fixed;
-  width: 12em;
+  width: 8em;
   display: inline-block;
-  left: 50%;
-  margin-bottom: 260px;
-  margin-left: -650px;
+  /* left: 50%;
+  margin-bottom: 260px; */
+  margin-left: 6em; 
   bottom: 150px;
   border-radius: 4px;
   border: 2px solid #fff;
@@ -136,6 +137,7 @@ body {
     -webkit-text-security: none;
     color: lightGray;
     pointer-events: none;
+    text-align: center;
 }
 
 @media (max-width: 420px) {
