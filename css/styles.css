@@ -8,11 +8,13 @@ body {
 
 #item-box {
   position: absolute;
-  top: 20%;
-  left: 10%;
+  top: 42%;
+  left: 4%;
   right: 10%;
   width: 80%;
   line-height: .5;
+  /* margin-top: 150px;
+  margin-left: -650px; */
 }
 
 .item {
@@ -21,6 +23,7 @@ body {
   line-height: 1.1;
   position: relative;
   margin: 0;
+  margin-left: 8em;
 }
 
 .item:before, .item:after {
@@ -73,12 +76,21 @@ body {
   text-align: center;
 }
 
+.title {
+  font-size: 3rem;
+  font-weight: bold, underline;
+  text-align: left;
+  margin-left: 6.5em;
+}
+
 #addItemButton {
   position: fixed;
   width: 6em;
   display: inline-block;
   left: 50%;
-  margin-bottom: -6em;
+  margin-top: 10px;
+  margin-bottom: 200px;
+  margin-left: -650px;
   bottom: 150px;
   border-radius: 4px;
   border: 2px solid #fff;
@@ -87,6 +99,7 @@ body {
   padding: 15px 0;
   transition: .5s ;
 }
+
 #addItemButton:hover {
   background-color: rgba(255,255,255,.25);
 }
@@ -100,7 +113,8 @@ body {
   width: 12em;
   display: inline-block;
   left: 50%;
-  margin-top: 10em;
+  margin-bottom: 260px;
+  margin-left: -650px;
   bottom: 150px;
   border-radius: 4px;
   border: 2px solid #fff;
@@ -116,6 +130,12 @@ body {
 
 .addItemInput:focus {
   outline: none;
+}
+
+::placeholder {
+    -webkit-text-security: none;
+    color: lightGray;
+    pointer-events: none;
 }
 
 @media (max-width: 420px) {
