@@ -72,7 +72,7 @@ body {
   font-style: normal;
 }
 
-.mainTitle {
+.main-title {
   font-size: 6rem;
   text-align: center;
 }
@@ -84,15 +84,11 @@ body {
   margin-left: 6.5em;
 }
 
-#addItemButton {
+#add-item-button {
   position: fixed;
   width: 6em;
   display: inline-block;
-  /* left: 50%; */
-  /* margin-top: 10px;
-  margin-bottom: 200px;
-  margin-left: -650px; */
-  bottom: 150px;
+  margin-top: -9em;
   border-radius: 4px;
   border: 2px solid #fff;
   color: #fff;
@@ -109,14 +105,12 @@ body {
   outline: none;
 }
 
-.addItemInput {
+.add-item-input {
   position: fixed;
   width: 8em;
   display: inline-block;
-  /* left: 50%;
-  margin-bottom: 260px; */
   margin-left: 6em; 
-  bottom: 150px;
+  margin-top: -9em;
   border-radius: 4px;
   border: 2px solid #fff;
   color: #fff;
