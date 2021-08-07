@@ -1,10 +1,25 @@
-import { inventory } from "./inventory.js";
-console.log(inventory[2]);
+const inventory = [
+    "Peanut butter",
+    "Jelly",
+    "Bread",
+];
+
+const meals = {
+    "Grilled Cheese": [
+      "Bread",
+      "Cheese",
+      "Butter",
+    ],
+    "Ramen": [
+      "Ramen",
+    ],
+  };
+
 function showMeal() {
     let items = document.querySelectorAll('.item');
     for (let i = 0; i < items.length; i++) {
         let item = items[i].innerHTML;
-        if (item == "Bread" && "Cheese") {
+        if (item == "Bread" && item == "Cheese") {
             console.log('Grilled cheese Davey boy!');
         }
     }

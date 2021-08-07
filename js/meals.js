@@ -1,10 +1,10 @@
 let meals = {
-  "Grilled Cheese": {
+  "Grilled Cheese": [
     "Bread",
     "Cheese",
     "Butter",
-  },
-  "Ramen": {
+  ],
+  "Ramen": [
     "Ramen",
-  },
+  ],
 };

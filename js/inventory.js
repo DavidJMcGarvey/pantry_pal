@@ -4,4 +4,4 @@ let inventory = [
     "Bread",
 ];
 
-export { inventory };
+// export { inventory };
