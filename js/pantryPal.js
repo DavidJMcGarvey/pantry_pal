@@ -1,10 +1,10 @@
-const inventory = [
+let inventory = [
     "Peanut butter",
     "Jelly",
     "Bread",
 ];
 
-const meals = {
+let meals = {
     "Grilled Cheese": [
       "Bread",
       "Cheese",
@@ -30,8 +30,14 @@ function addItem() {
     let item = `<li class=\"item\">${newItem.value}</li>`;
     if (newItem.value !== "") {
         document.getElementById('item-box').innerHTML += item;
+        inventory.push(newItem.value);
+        console.log(inventory);
     }
     showMeal();
+}
+
+function deleteItem() {
+    
 }
 
 document.getElementById('addItemButton').addEventListener("click", addItem, false);
