@@ -1,46 +1,38 @@
-let inventory = [
-    "Peanut butter",
-    "Jelly",
-    "Bread",
-];
-
-let meals = {
-    "Grilled Cheese": [
-      "Bread",
-      "Cheese",
-      "Butter",
-    ],
-    "Ramen": [
-      "Ramen",
-    ],
-  };
+let inventory = [];
 
 function showMeal() {
-    let items = document.querySelectorAll('.item');
-    for (let i = 0; i < items.length; i++) {
-        let item = items[i].innerHTML;
-        if (item == "Bread" && item == "Cheese") {
-            console.log('Grilled cheese Davey boy!');
-        }
+    // Grilled cheese
+    if (inventory.includes("Bread", "Cheese")) {
+        console.log('Grilled cheese Davey boy!');
     }
 }
 
 function addItem() {
-    let newItem = document.querySelector('.addItemInput');
+    let newItem = document.querySelector('.add-item-input');
     let item = `<li class=\"item\">${newItem.value}</li>`;
     if (newItem.value !== "") {
         document.getElementById('item-box').innerHTML += item;
         inventory.push(newItem.value);
-        console.log(inventory);
+        addTitle("inventory");
     }
     showMeal();
 }
 
-function deleteItem() {
-    
+function addTitle(title) {
+    if (title == "meal") {
+        let mealTitle = `<h1 class=\"meal-title\">Meals</h1>`;
+        document.getElementById('meal-title').innerHTML = mealTitle;
+    } else if (title == "inventory") {
+        let inventoryTitle = `<h1 class=\"inventory-title\">Inventory</h1>`;
+        document.getElementById('inventory-title').innerHTML = inventoryTitle;
+    }
 }
 
-document.getElementById('addItemButton').addEventListener("click", addItem, false);
+function deleteItem() {
+
+}
+
+document.getElementById('add-item-button').addEventListener("click", addItem, false);
 
 
 
