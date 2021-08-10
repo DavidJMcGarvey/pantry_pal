@@ -9,7 +9,7 @@ function showMeal() {
 
 function addItem() {
     let newItem = document.querySelector('.add-item-input');
-    let item = `<li class=\"item\">${newItem.value}</li>`;
+    let item = `<li class=\"item\"><span>${newItem.value}</li>`;
     if (newItem.value !== "") {
         document.getElementById('item-box').innerHTML += item;
         inventory.push(newItem.value);
