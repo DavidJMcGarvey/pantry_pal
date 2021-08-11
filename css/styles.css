@@ -7,17 +7,17 @@ body {
 }
 
 ul {
-  text-align: center;
+  /* text-align: center; */
   list-style-position: inside;
 }
 
 #item-box {
-  text-align: center;
+  /* text-align: center; */
 }
 
 li.item {
   font-size: 2em;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .source {
@@ -53,8 +53,9 @@ li.item {
 
 .inventory-title {
   font-size: 3em;
-  text-align: center;
+  text-align: left;
   position: relative;
+  margin-left: .5em;
 
 }
 
@@ -75,6 +76,7 @@ li.item {
   width: 6em;
   display: inline-block;
   margin-top: -9em;
+  margin-left: .5em;
   border-radius: 4px;
   border: 2px solid #fff;
   color: #fff;
@@ -95,7 +97,7 @@ li.item {
   position: fixed;
   width: 8em;
   display: inline-block;
-  margin-left: 6em; 
+  margin-left: 6.5em; 
   margin-top: -9em;
   border-radius: 4px;
   border: 2px solid #fff;
