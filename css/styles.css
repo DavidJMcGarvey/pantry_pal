@@ -62,6 +62,7 @@ li.item {
 .meal-title {
   font-size: 3em;
   text-align: center;
+  margin-left: 5em;  /* Tester */
 }
 
 .title {
