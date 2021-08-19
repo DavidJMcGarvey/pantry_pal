@@ -11,9 +11,9 @@ ul {
   list-style-position: inside;
 }
 
-#item-box {
+/* #item-box {
   /* text-align: center; */
-}
+} */
 
 li.item {
   font-size: 2em;
