@@ -2,8 +2,11 @@ let inventory = [];
 
 function showMeal() {
     // Grilled cheese
+    let meal = `<li class=\"item\"><span>Grilled Cheese!</li>`;
     if (inventory.includes("Bread", "Cheese")) {
+        document.getElementById('meal-box').innerHTML += meal;
         console.log('Grilled cheese Davey boy!');
+        addTitle("meal");
     }
 }
 
