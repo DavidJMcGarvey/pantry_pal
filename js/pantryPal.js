@@ -1,9 +1,10 @@
-let inventory = [];
+let itemInventory = [];
+let mealInventory = [];
 
 function showMeal() {
     // Grilled cheese
     let meal = `<li class=\"item\"><span>Grilled Cheese!</li>`;
-    if (inventory.includes("Bread", "Cheese")) {
+    if (itemInventory.includes("Bread", "Cheese")) {
         document.getElementById('meal-box').innerHTML += meal;
         console.log('Grilled cheese Davey boy!');
         addTitle("meal");
@@ -15,7 +16,7 @@ function addItem() {
     let item = `<li class=\"item\"><span>${newItem.value}</li>`;
     if (newItem.value !== "") {
         document.getElementById('item-box').innerHTML += item;
-        inventory.push(newItem.value);
+        itemInventory.push(newItem.value);
         addTitle("inventory");
     }
     showMeal();
@@ -36,7 +37,6 @@ function deleteItem() {
 }
 
 document.getElementById('add-item-button').addEventListener("click", addItem, false);
-
 
 
 
