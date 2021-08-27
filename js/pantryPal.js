@@ -1,3 +1,6 @@
+import testInventory from "data/testInventory.js";
+
+
 let itemInventory = [];
 let mealInventory = [];
 
@@ -18,6 +21,7 @@ function addItem() {
         document.getElementById('item-box').innerHTML += item;
         itemInventory.push(newItem.value);
         addTitle("inventory");
+        console.log(testInventory);
     }
     showMeal();
 }
