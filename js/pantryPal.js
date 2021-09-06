@@ -1,8 +1,23 @@
-import testInventory from "data/testInventory.js";
+// import testInventory from "data/testInventory.js";
 
 
 let itemInventory = [];
-let mealInventory = [];
+let mealInventory = [
+    {
+        name: "Grilled Chesse",
+        items: [
+            "Bread",
+            "Cheese"
+        ]
+    },
+    {
+        name: "Toast",
+        items: [
+            "Bread",
+            "Jame"
+        ]
+    }    
+];
 
 function showMeal() {
     // Grilled cheese
@@ -21,9 +36,10 @@ function addItem() {
         document.getElementById('item-box').innerHTML += item;
         itemInventory.push(newItem.value);
         addTitle("inventory");
-        console.log(testInventory);
+        // console.log(testInventory);
     }
     showMeal();
+    console.log(mealInventory.name);
 }
 
 function addTitle(title) {
