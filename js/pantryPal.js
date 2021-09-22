@@ -21,8 +21,9 @@ let mealInventory = [
 
 function showMeal() {
     // Grilled cheese
-    let meal = `<li class=\"item\"><span>Grilled Cheese!</li>`;
-    if (itemInventory.includes("Bread", "Cheese")) {
+    let meal = `<li class=\"item\"><span>${mealInventory[0].name}</li>`;
+    // if (itemInventory.includes("Bread", "Cheese")) {
+    if (itemInventory.includes(mealInventory[0].items[0], mealInventory[0].items[1])) {
         document.getElementById('meal-box').innerHTML += meal;
         console.log('Grilled cheese Davey boy!');
         addTitle("meal");
@@ -39,7 +40,6 @@ function addItem() {
         // console.log(testInventory);
     }
     showMeal();
-    console.log(mealInventory.name);
 }
 
 function addTitle(title) {
