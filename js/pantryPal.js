@@ -14,20 +14,31 @@ let mealInventory = [
         name: "Toast",
         items: [
             "Bread",
-            "Jame"
+            "Jam"
         ]
     }    
 ];
 
+
+
 function showMeal() {
-    // Grilled cheese
-    let meal = `<li class=\"item\"><span>${mealInventory[0].name}</li>`;
+    // let meal = `<li class=\"item\"><span>${mealInventory[0].name}</li>`;
     // if (itemInventory.includes("Bread", "Cheese")) {
-    if (itemInventory.includes(mealInventory[0].items[0], mealInventory[0].items[1])) {
-        document.getElementById('meal-box').innerHTML += meal;
-        console.log('Grilled cheese Davey boy!');
-        addTitle("meal");
+
+    for (let i = 0; i < mealInventory.length; i++) {
+        if (itemInventory.includes(mealInventory[i].items[i])) {
+            let meal = `<li class=\"item\"><span>${mealInventory[i].name}</li>`;
+            document.getElementById('meal-box').innerHTML += meal;
+            console.log('Grilled cheese Davey boy!');
+            addTitle("meal");
+        }
     }
+
+    // if (itemInventory.includes(mealInventory[0].items[0]) && itemInventory.includes(mealInventory[0].items[1])) {
+    //     document.getElementById('meal-box').innerHTML += meal;
+    //     console.log('Grilled cheese Davey boy!');
+    //     addTitle("meal");
+    // }
 }
 
 function addItem() {
@@ -37,7 +48,6 @@ function addItem() {
         document.getElementById('item-box').innerHTML += item;
         itemInventory.push(newItem.value);
         addTitle("inventory");
-        // console.log(testInventory);
     }
     showMeal();
 }
