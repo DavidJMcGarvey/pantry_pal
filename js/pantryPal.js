@@ -28,9 +28,12 @@ function showMeal() {
     for (let i = 0; i < mealInventory.length; i++) {
         if (itemInventory.includes(mealInventory[i].items[i])) {
             let meal = `<li class=\"item\"><span>${mealInventory[i].name}</li>`;
-            document.getElementById('meal-box').innerHTML += meal;
-            console.log('Grilled cheese Davey boy!');
-            addTitle("meal");
+            if (meal != null) {
+                document.getElementById('meal-box').innerHTML += meal;
+                console.log('Grilled cheese Davey boy!');
+                addTitle("meal");
+            }
+
         }
     }
 
