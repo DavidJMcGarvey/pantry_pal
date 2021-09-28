@@ -8,14 +8,16 @@ let mealInventory = [
         items: [
             "Bread",
             "Cheese"
-        ]
+        ],
+        available: false,
     },
     {
         name: "Toast",
         items: [
             "Bread",
             "Jam"
-        ]
+        ],
+        available: false,
     }    
 ];
 
@@ -28,8 +30,9 @@ function showMeal() {
     for (let i = 0; i < mealInventory.length; i++) {
         if (itemInventory.includes(mealInventory[i].items[i])) {
             let meal = `<li class=\"item\"><span>${mealInventory[i].name}</li>`;
-            if (meal != null) {
+            if (mealInventory[i].available == false) {
                 document.getElementById('meal-box').innerHTML += meal;
+                mealInventory[i].available = true;
                 console.log('Grilled cheese Davey boy!');
                 addTitle("meal");
             }
