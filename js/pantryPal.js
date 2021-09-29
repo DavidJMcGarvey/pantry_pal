@@ -1,5 +1,4 @@
-// import testInventory from "data/testInventory.js";
-
+// import meal from "data/meals.js";
 
 let itemInventory = [];
 let mealInventory = [
@@ -9,7 +8,7 @@ let mealInventory = [
             "Bread",
             "Cheese"
         ],
-        available: false,
+        onMenu: false,
     },
     {
         name: "Toast",
@@ -17,34 +16,23 @@ let mealInventory = [
             "Bread",
             "Jam"
         ],
-        available: false,
+        onMenu: false,
     }    
 ];
 
-
-
 function showMeal() {
-    // let meal = `<li class=\"item\"><span>${mealInventory[0].name}</li>`;
-    // if (itemInventory.includes("Bread", "Cheese")) {
-
     for (let i = 0; i < mealInventory.length; i++) {
         if (itemInventory.includes(mealInventory[i].items[i])) {
             let meal = `<li class=\"item\"><span>${mealInventory[i].name}</li>`;
-            if (mealInventory[i].available == false) {
+            if (mealInventory[i].onMenu == false) {
                 document.getElementById('meal-box').innerHTML += meal;
-                mealInventory[i].available = true;
+                mealInventory[i].onMenu = true;
                 console.log('Grilled cheese Davey boy!');
                 addTitle("meal");
             }
 
         }
     }
-
-    // if (itemInventory.includes(mealInventory[0].items[0]) && itemInventory.includes(mealInventory[0].items[1])) {
-    //     document.getElementById('meal-box').innerHTML += meal;
-    //     console.log('Grilled cheese Davey boy!');
-    //     addTitle("meal");
-    // }
 }
 
 function addItem() {
