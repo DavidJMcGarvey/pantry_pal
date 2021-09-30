@@ -1,4 +1,4 @@
-// import meal from "data/meals.js";
+// import { mealInventory } from './meals.js';
 
 let itemInventory = [];
 let mealInventory = [
@@ -27,7 +27,6 @@ function showMeal() {
             if (mealInventory[i].onMenu == false) {
                 document.getElementById('meal-box').innerHTML += meal;
                 mealInventory[i].onMenu = true;
-                console.log('Grilled cheese Davey boy!');
                 addTitle("meal");
             }
 
