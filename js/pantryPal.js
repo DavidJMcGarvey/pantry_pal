@@ -20,13 +20,12 @@ let mealInventory = [
     }    
 ];
 
+
 function showMeal() {
     for (let i = 0; i < mealInventory.length; i++) {
         let meal = `<li class=\"item\"><span>${mealInventory[i].name}</li>`;
-        for (let j = 0; j < mealInventory[i].items.length; j++) {
-            console.log(mealInventory[i].items[j]);
+        for (let j = 0; j < mealInventory[i].items[i].length; j++) {
             if (itemInventory.includes(mealInventory[i].items[j])) {
-                
                 if (mealInventory[i].onMenu == false) {
                     document.getElementById('meal-box').innerHTML += meal;
                     mealInventory[i].onMenu = true;
