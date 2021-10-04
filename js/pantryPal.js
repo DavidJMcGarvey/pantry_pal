@@ -22,14 +22,17 @@ let mealInventory = [
 
 function showMeal() {
     for (let i = 0; i < mealInventory.length; i++) {
-        if (itemInventory.includes(mealInventory[i].items[i])) {
-            let meal = `<li class=\"item\"><span>${mealInventory[i].name}</li>`;
-            if (mealInventory[i].onMenu == false) {
-                document.getElementById('meal-box').innerHTML += meal;
-                mealInventory[i].onMenu = true;
-                addTitle("meal");
+        let meal = `<li class=\"item\"><span>${mealInventory[i].name}</li>`;
+        for (let j = 0; j < mealInventory[i].items.length; j++) {
+            console.log(mealInventory[i].items[j]);
+            if (itemInventory.includes(mealInventory[i].items[j])) {
+                
+                if (mealInventory[i].onMenu == false) {
+                    document.getElementById('meal-box').innerHTML += meal;
+                    mealInventory[i].onMenu = true;
+                    addTitle("meal");
+                }
             }
-
         }
     }
 }
