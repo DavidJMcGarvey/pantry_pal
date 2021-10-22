@@ -1,4 +1,17 @@
 // import { mealInventory } from './meals.js';
+class Meal {
+    constructor(name, items, onMenu) {
+        this.name = name;
+        this.items = items;
+        this.onMenu = onMenu;
+    }
+}
+
+const grilledCheese = new Meal(
+    "Grilled Cheese", 
+    ["Bread",
+    "Cheese"]
+);
 
 let itemInventory = [];
 let mealInventory = [
@@ -25,7 +38,8 @@ function showMeal() {
     for (let i = 0; i < mealInventory.length; i++) {
         let meal = `<li class=\"item\"><span>${mealInventory[i].name}</li>`;
         // for (let j = 0; j < mealInventory[i].items.length; j++) {
-            if (itemInventory.includes(mealInventory[i].items.values())) {
+            // if (itemInventory.includes(mealInventory[i].items.values())) {
+            if (itemInventory.includes(grilledCheese.items)) {
                 if (mealInventory[i].onMenu == false) {
                     document.getElementById('meal-box').innerHTML += meal;
                     mealInventory[i].onMenu = true;
