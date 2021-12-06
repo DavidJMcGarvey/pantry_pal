@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 app.use(express.static('public'));
 
 // Allow front-end access to node_modules dir
-app.use('/scripts', express.statuc(`${__dirname}/node_modules`));
+app.use('/scripts', express.static(`${__dirname}/node_modules`));
 
 // Express error handler
 const errorHandler = (err, req, res) => {

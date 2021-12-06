@@ -1,4 +1,3 @@
-// import { mealInventory } from './meals.js';
 class Meal {
     constructor(name, items, onMenu) {
         this.name = name;
