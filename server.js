@@ -9,6 +9,7 @@ app.use(express.static('public'));
 
 // Allow front-end access to node_modules dir
 app.use('/scripts', express.static(`${__dirname}/node_modules`));
+app.use('/css/styles.css');
 
 // Express error handler
 const errorHandler = (err, req, res) => {
